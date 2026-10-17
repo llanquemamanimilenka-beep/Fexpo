@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEXPO ITSEC 2026</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>FEXPO ITSEC 2026</h1>
+    </header>
+
+    <nav>
+        <button onclick="mostrar('inicio')">Inicio</button>
+        <button onclick="mostrar('stand1')">Stand 1</button>
+        <button onclick="mostrar('stand2')">Stand 2</button>
+        <button onclick="mostrar('stand3')">Stand 3</button>
+    </nav>
+
+    <main>
+
+        <section id="inicio" class="activa">
+            <h2>FEXPO ITSEC 2026</h2>
+            <p><strong>Nombre:</strong> Milenka Llanque Mamani</p>
+            <p><strong>Curso:</strong> 1ro C</p>
+            <p><strong>Gestión:</strong> 2026</p>
+        </section>
+
+        <section id="stand1">
+            <h2>Stand 1</h2>
+
+            <p><strong>Creaciones</strong></p>
+            <p><strong>Fexpo Itsec</strong></p>
+            <p><strong>Sombreros hechos a mano y moños</strong></p>
+            <p><strong>Hechos a mano con borados con telas finas</strong></p>
+
+            <h3>Fotografías del stand</h3>
+            <img src="imagenes/entrevista moños.png" alt="Fotografía 1 del stand 1">
+            <img src="imagenes/sombre.png" alt="Fotografía 2 del stand 1">
+            <img src="imagenes/sombreros.png" alt="Yo en el stand 1">
+
+            <h3>Entrevista al emprendedor</h3>
+            <video controls>
+                <source src="videos/sombreros.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="stand2">
+            <h2>Stand 2</h2>
+
+            <p><strong>spray ambiental</strong></p>
+            <p><strong>Fexpo Itsec</strong></p>
+            <p><strong>Limpiador de lentes</strong></p>
+            <p><strong>Ayuda en la limpieza de lentes</strong></p>
+
+            <h3>Fotografías del stand</h3>
+            <img src="imagenes/limpiador 2.png" alt="Fotografía 1 del stand 2">
+            <img src="imagenes/limpiador.png" alt="Fotografía 2 del stand 2">
+            <img src="imagenes/entrevista limpiador.png" alt="Yo en el stand 2">
+
+            <h3>Entrevista al emprendedor</h3>
+            <video controls>
+                <source src="videos/lentes.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="stand3">
+            <h2>Stand 3</h2>
+
+            <p><strong>Arico</strong></p>
+            <p><strong>Fexpo Itsec</strong></p>
+            <p><strong>Ropa de varon</strong></p>
+            <p><strong>Ropa de moda tenis y mas para chicos con estilo sueteres todo lo que necites</strong></p>
+
+            <h3>Fotografías del stand</h3>
+            <img src="imagenes/ropa1.png" alt="Fotografía 1 del stand 3">
+            <img src="imagenes/ropas.png" alt="Fotografía 2 del stand 3">
+            <img src="imagenes/entrevista ropa.png" alt="Yo en el stand 3">
+
+            <h3>Entrevista al emprendedor</h3>
+            <video controls>
+                <source src="videos/atuendos.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+
+    <script>
+        function mostrar(id) {
+            let secciones = document.querySelectorAll("main section");
+
+            secciones.forEach(function(seccion) {
+                seccion.classList.remove("activa");
+            });
+
+            document.getElementById(id).classList.add("activa");
+        }
+    </script>
+
+</body>
+</html>
+ 
